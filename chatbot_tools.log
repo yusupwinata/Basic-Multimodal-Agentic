@@ -1,0 +1,619 @@
+2025-05-22 19:59:04,890 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-05-22 19:59:04,891 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-22 19:59:05,033 - asyncio - DEBUG - Using selector: SelectSelector
+2025-05-22 19:59:05,054 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7862 local_address=None timeout=None socket_options=None
+2025-05-22 19:59:05,055 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002021795E290>
+2025-05-22 19:59:05,055 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-22 19:59:05,055 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 19:59:05,055 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-22 19:59:05,055 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 19:59:05,055 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-22 19:59:05,056 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 22 May 2025 12:59:05 GMT'), (b'server', b'uvicorn'), (b'content-length', b'4'), (b'content-type', b'application/json')])
+2025-05-22 19:59:05,056 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7862/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-22 19:59:05,056 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-22 19:59:05,056 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 19:59:05,056 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 19:59:05,056 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 19:59:05,057 - httpcore.connection - DEBUG - close.started
+2025-05-22 19:59:05,057 - httpcore.connection - DEBUG - close.complete
+2025-05-22 19:59:05,057 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7862 local_address=None timeout=3 socket_options=None
+2025-05-22 19:59:05,075 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002021795F410>
+2025-05-22 19:59:05,075 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-05-22 19:59:05,075 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 19:59:05,075 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-05-22 19:59:05,075 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 19:59:05,075 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-05-22 19:59:05,081 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 22 May 2025 12:59:05 GMT'), (b'server', b'uvicorn'), (b'content-length', b'53888'), (b'content-type', b'text/html; charset=utf-8')])
+2025-05-22 19:59:05,081 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7862/ "HTTP/1.1 200 OK"
+2025-05-22 19:59:05,081 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-05-22 19:59:05,082 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 19:59:05,082 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 19:59:05,082 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 19:59:05,082 - httpcore.connection - DEBUG - close.started
+2025-05-22 19:59:05,082 - httpcore.connection - DEBUG - close.complete
+2025-05-22 19:59:05,087 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-22 19:59:08,817 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000202176BBBD0>
+2025-05-22 19:59:08,817 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002021765E3C0> server_hostname='api.gradio.app' timeout=3
+2025-05-22 19:59:08,842 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/initiated HTTP/1.1" 200 0
+2025-05-22 19:59:09,226 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0
+2025-05-22 19:59:09,427 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020217716650>
+2025-05-22 19:59:09,428 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-22 19:59:09,428 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 19:59:09,428 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-22 19:59:09,428 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 19:59:09,428 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-22 19:59:09,755 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 22 May 2025 12:59:07 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-05-22 19:59:09,755 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-22 19:59:09,755 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-22 19:59:09,755 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 19:59:09,755 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 19:59:09,755 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 19:59:09,756 - httpcore.connection - DEBUG - close.started
+2025-05-22 19:59:09,756 - httpcore.connection - DEBUG - close.complete
+2025-05-22 19:59:21,549 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'hi, available categories', 'options': None}], 'model': 'gpt-4o-mini', 'temperature': 0.3, 'tools': [{'type': 'function', 'function': {'name': 'get_ticket_price', 'description': "Get football match ticket prices by category. Just call this when a customer asks for the ticket price, for example 'How much is a category ... ticket?'", 'parameters': {'type': 'object', 'properties': {'category': {'type': 'string', 'description': 'The ticket category the customer wants to purchase'}}, 'required': ['category'], 'additionalProperties': False}}}]}}
+2025-05-22 19:59:21,549 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-22 19:59:21,550 - httpcore.connection - DEBUG - close.started
+2025-05-22 19:59:21,550 - httpcore.connection - DEBUG - close.complete
+2025-05-22 19:59:21,550 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-22 19:59:21,626 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020217548550>
+2025-05-22 19:59:21,626 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002020BEE9A30> server_hostname='api.openai.com' timeout=5.0
+2025-05-22 19:59:21,841 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002021791CED0>
+2025-05-22 19:59:21,842 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-22 19:59:21,842 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 19:59:21,842 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-22 19:59:21,842 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 19:59:21,842 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-22 19:59:24,181 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 22 May 2025 12:59:21 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'1292'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'1308'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199915'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'25ms'), (b'x-request-id', b'req_8043cdaa47f2e3902d69cabcaa8124cc'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c7d7c6cd170ac-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 19:59:24,182 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 19:59:24,182 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-22 19:59:24,183 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 19:59:24,183 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 19:59:24,183 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 19:59:24,184 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Thu, 22 May 2025 12:59:21 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '1292', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '1308', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '199915', 'x-ratelimit-reset-requests': '8.64s', 'x-ratelimit-reset-tokens': '25ms', 'x-request-id': 'req_8043cdaa47f2e3902d69cabcaa8124cc', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c7d7c6cd170ac-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 19:59:24,184 - openai._base_client - DEBUG - request_id: req_8043cdaa47f2e3902d69cabcaa8124cc
+2025-05-22 19:59:24,186 - root - DEBUG - Tool calls status: stop
+2025-05-22 19:59:24,186 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/audio/speech', 'headers': {'Accept': 'application/octet-stream'}, 'files': None, 'json_data': {'input': 'The available ticket categories at GBK Stadium are category 1, category 2, and category 3.', 'model': 'tts-1', 'voice': 'nova'}}
+2025-05-22 19:59:24,187 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/audio/speech
+2025-05-22 19:59:24,188 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-22 19:59:24,190 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 19:59:24,190 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-22 19:59:24,190 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 19:59:24,190 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-22 19:59:26,796 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 22 May 2025 12:59:24 GMT'), (b'Content-Type', b'audio/mpeg'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'1770'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-5677f7c6b9-kg8ms'), (b'x-envoy-upstream-service-time', b'1775'), (b'x-ratelimit-limit-requests', b'500'), (b'x-ratelimit-remaining-requests', b'499'), (b'x-ratelimit-reset-requests', b'120ms'), (b'x-request-id', b'req_d1140fca69367d8b5969dbae912da958'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c7d8c3b2f70ac-CGK'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 19:59:26,796 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-05-22 19:59:26,797 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-22 19:59:27,757 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 19:59:27,757 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 19:59:27,757 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 19:59:27,758 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/audio/speech "200 OK" Headers({'date': 'Thu, 22 May 2025 12:59:24 GMT', 'content-type': 'audio/mpeg', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '1770', 'openai-version': '2020-10-01', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'via': 'envoy-router-5677f7c6b9-kg8ms', 'x-envoy-upstream-service-time': '1775', 'x-ratelimit-limit-requests': '500', 'x-ratelimit-remaining-requests': '499', 'x-ratelimit-reset-requests': '120ms', 'x-request-id': 'req_d1140fca69367d8b5969dbae912da958', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c7d8c3b2f70ac-CGK', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 19:59:27,758 - openai._base_client - DEBUG - request_id: req_d1140fca69367d8b5969dbae912da958
+2025-05-22 20:00:17,725 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'hi, available categories', 'options': None}, {'role': 'assistant', 'metadata': None, 'content': 'The available ticket categories at GBK Stadium are category 1, category 2, and category 3.', 'options': None}, {'role': 'user', 'metadata': None, 'content': 'how much for category 2', 'options': None}], 'model': 'gpt-4o-mini', 'temperature': 0.3, 'tools': [{'type': 'function', 'function': {'name': 'get_ticket_price', 'description': "Get football match ticket prices by category. Just call this when a customer asks for the ticket price, for example 'How much is a category ... ticket?'", 'parameters': {'type': 'object', 'properties': {'category': {'type': 'string', 'description': 'The ticket category the customer wants to purchase'}}, 'required': ['category'], 'additionalProperties': False}}}]}}
+2025-05-22 20:00:17,726 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-22 20:00:17,727 - httpcore.connection - DEBUG - close.started
+2025-05-22 20:00:17,727 - httpcore.connection - DEBUG - close.complete
+2025-05-22 20:00:17,727 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-22 20:00:18,122 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020216099290>
+2025-05-22 20:00:18,122 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002020BEE9A30> server_hostname='api.openai.com' timeout=5.0
+2025-05-22 20:00:18,142 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002021799B210>
+2025-05-22 20:00:18,142 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-22 20:00:18,142 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 20:00:18,142 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-22 20:00:18,143 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 20:00:18,143 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-22 20:00:20,557 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 22 May 2025 13:00:18 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'2124'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'2133'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199883'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'34ms'), (b'x-request-id', b'req_8f44ad385cc9542794e18b8efe284115'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c7eda3fc2c6e4-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 20:00:20,557 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 20:00:20,557 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-22 20:00:20,557 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 20:00:20,557 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 20:00:20,557 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 20:00:20,558 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Thu, 22 May 2025 13:00:18 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '2124', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '2133', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '199883', 'x-ratelimit-reset-requests': '8.64s', 'x-ratelimit-reset-tokens': '34ms', 'x-request-id': 'req_8f44ad385cc9542794e18b8efe284115', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c7eda3fc2c6e4-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 20:00:20,558 - openai._base_client - DEBUG - request_id: req_8f44ad385cc9542794e18b8efe284115
+2025-05-22 20:00:20,563 - root - DEBUG - Tool calls status: tool_calls
+2025-05-22 20:00:20,564 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/images/generations', 'files': None, 'json_data': {'prompt': 'An image representing supporters watching a football match from a distance that is not close but not far in a stadium', 'model': 'dall-e-3', 'n': 1, 'response_format': 'b64_json', 'size': '1024x1024'}}
+2025-05-22 20:00:20,565 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/images/generations
+2025-05-22 20:00:20,566 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-22 20:00:20,566 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 20:00:20,566 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-22 20:00:20,566 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 20:00:20,566 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-22 20:00:21,218 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Date', b'Thu, 22 May 2025 13:00:19 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'175'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'openai-organization', b'winata-ptid7q'), (b'x-request-id', b'req_fc724d2845ac3dd505b9aa45643b0685'), (b'openai-processing-ms', b'205'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c7ee938ecc6e4-CGK'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 20:00:21,218 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2025-05-22 20:00:21,218 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-22 20:00:21,218 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 20:00:21,218 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 20:00:21,218 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 20:00:21,218 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/images/generations "500 Internal Server Error" Headers({'date': 'Thu, 22 May 2025 13:00:19 GMT', 'content-type': 'application/json', 'content-length': '175', 'connection': 'keep-alive', 'openai-version': '2020-10-01', 'openai-organization': 'winata-ptid7q', 'x-request-id': 'req_fc724d2845ac3dd505b9aa45643b0685', 'openai-processing-ms': '205', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c7ee938ecc6e4-CGK', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 20:00:21,218 - openai._base_client - DEBUG - request_id: req_fc724d2845ac3dd505b9aa45643b0685
+2025-05-22 20:00:21,219 - openai._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-05-22 20:00:21,221 - openai._base_client - DEBUG - Retrying due to status code 500
+2025-05-22 20:00:21,221 - openai._base_client - DEBUG - 2 retries left
+2025-05-22 20:00:21,221 - openai._base_client - INFO - Retrying request to /images/generations in 0.412321 seconds
+2025-05-22 20:00:21,635 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/images/generations', 'files': None, 'json_data': {'prompt': 'An image representing supporters watching a football match from a distance that is not close but not far in a stadium', 'model': 'dall-e-3', 'n': 1, 'response_format': 'b64_json', 'size': '1024x1024'}}
+2025-05-22 20:00:21,635 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/images/generations
+2025-05-22 20:00:21,636 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-22 20:00:21,636 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 20:00:21,636 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-22 20:00:21,637 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 20:00:21,637 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-22 20:00:22,236 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Date', b'Thu, 22 May 2025 13:00:20 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'175'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'openai-organization', b'winata-ptid7q'), (b'x-request-id', b'req_df994b0e2f94eeb99518c64d3518a107'), (b'openai-processing-ms', b'183'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c7ef029a8c6e4-CGK'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 20:00:22,236 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2025-05-22 20:00:22,236 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-22 20:00:22,236 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 20:00:22,237 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 20:00:22,237 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 20:00:22,237 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/images/generations "500 Internal Server Error" Headers({'date': 'Thu, 22 May 2025 13:00:20 GMT', 'content-type': 'application/json', 'content-length': '175', 'connection': 'keep-alive', 'openai-version': '2020-10-01', 'openai-organization': 'winata-ptid7q', 'x-request-id': 'req_df994b0e2f94eeb99518c64d3518a107', 'openai-processing-ms': '183', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c7ef029a8c6e4-CGK', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 20:00:22,237 - openai._base_client - DEBUG - request_id: req_df994b0e2f94eeb99518c64d3518a107
+2025-05-22 20:00:22,237 - openai._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-05-22 20:00:22,238 - openai._base_client - DEBUG - Retrying due to status code 500
+2025-05-22 20:00:22,238 - openai._base_client - DEBUG - 1 retry left
+2025-05-22 20:00:22,238 - openai._base_client - INFO - Retrying request to /images/generations in 0.912931 seconds
+2025-05-22 20:00:23,152 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/images/generations', 'files': None, 'json_data': {'prompt': 'An image representing supporters watching a football match from a distance that is not close but not far in a stadium', 'model': 'dall-e-3', 'n': 1, 'response_format': 'b64_json', 'size': '1024x1024'}}
+2025-05-22 20:00:23,152 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/images/generations
+2025-05-22 20:00:23,153 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-22 20:00:23,153 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 20:00:23,153 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-22 20:00:23,153 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 20:00:23,153 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-22 20:00:23,574 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Date', b'Thu, 22 May 2025 13:00:21 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'175'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'openai-organization', b'winata-ptid7q'), (b'x-request-id', b'req_436d3837cc25cbe39946150c2b87cf1a'), (b'openai-processing-ms', b'97'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c7ef97c49c6e4-CGK'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 20:00:23,574 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2025-05-22 20:00:23,574 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-22 20:00:23,574 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 20:00:23,574 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 20:00:23,574 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 20:00:23,575 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/images/generations "500 Internal Server Error" Headers({'date': 'Thu, 22 May 2025 13:00:21 GMT', 'content-type': 'application/json', 'content-length': '175', 'connection': 'keep-alive', 'openai-version': '2020-10-01', 'openai-organization': 'winata-ptid7q', 'x-request-id': 'req_436d3837cc25cbe39946150c2b87cf1a', 'openai-processing-ms': '97', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c7ef97c49c6e4-CGK', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 20:00:23,575 - openai._base_client - DEBUG - request_id: req_436d3837cc25cbe39946150c2b87cf1a
+2025-05-22 20:00:23,575 - openai._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-05-22 20:00:23,576 - openai._base_client - DEBUG - Re-raising status error
+2025-05-22 20:01:23,381 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/images/generations', 'files': None, 'json_data': {'prompt': 'An image representing supporters watching a football match from a distance that is not close but not far in a stadium', 'model': 'dall-e-3', 'n': 1, 'response_format': 'b64_json', 'size': '1024x1024'}}
+2025-05-22 20:01:23,381 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/images/generations
+2025-05-22 20:01:23,381 - httpcore.connection - DEBUG - close.started
+2025-05-22 20:01:23,381 - httpcore.connection - DEBUG - close.complete
+2025-05-22 20:01:23,382 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-22 20:01:23,456 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020217698A90>
+2025-05-22 20:01:23,456 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002020BEE9A30> server_hostname='api.openai.com' timeout=5.0
+2025-05-22 20:01:23,476 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002021799AED0>
+2025-05-22 20:01:23,476 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-22 20:01:23,476 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 20:01:23,476 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-22 20:01:23,477 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 20:01:23,477 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-22 20:01:23,928 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Date', b'Thu, 22 May 2025 13:01:22 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'175'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'openai-organization', b'winata-ptid7q'), (b'x-request-id', b'req_464c957f4af1da316ab92b917a4ae83e'), (b'openai-processing-ms', b'158'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c80725dee4b1b-CGK'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 20:01:23,929 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2025-05-22 20:01:23,929 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-22 20:01:23,930 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 20:01:23,930 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 20:01:23,930 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 20:01:23,930 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/images/generations "500 Internal Server Error" Headers({'date': 'Thu, 22 May 2025 13:01:22 GMT', 'content-type': 'application/json', 'content-length': '175', 'connection': 'keep-alive', 'openai-version': '2020-10-01', 'openai-organization': 'winata-ptid7q', 'x-request-id': 'req_464c957f4af1da316ab92b917a4ae83e', 'openai-processing-ms': '158', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c80725dee4b1b-CGK', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 20:01:23,930 - openai._base_client - DEBUG - request_id: req_464c957f4af1da316ab92b917a4ae83e
+2025-05-22 20:01:23,931 - openai._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-05-22 20:01:23,932 - openai._base_client - DEBUG - Retrying due to status code 500
+2025-05-22 20:01:23,932 - openai._base_client - DEBUG - 2 retries left
+2025-05-22 20:01:23,932 - openai._base_client - INFO - Retrying request to /images/generations in 0.472323 seconds
+2025-05-22 20:01:24,405 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/images/generations', 'files': None, 'json_data': {'prompt': 'An image representing supporters watching a football match from a distance that is not close but not far in a stadium', 'model': 'dall-e-3', 'n': 1, 'response_format': 'b64_json', 'size': '1024x1024'}}
+2025-05-22 20:01:24,405 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/images/generations
+2025-05-22 20:01:24,405 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-22 20:01:24,406 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 20:01:24,406 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-22 20:01:24,406 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 20:01:24,406 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-22 20:01:24,791 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Date', b'Thu, 22 May 2025 13:01:22 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'175'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'openai-organization', b'winata-ptid7q'), (b'x-request-id', b'req_9745d5b3bc6ac570834f75d041671acd'), (b'openai-processing-ms', b'102'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c80782fd64b1b-CGK'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 20:01:24,792 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2025-05-22 20:01:24,792 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-22 20:01:24,794 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 20:01:24,794 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 20:01:24,794 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 20:01:24,794 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/images/generations "500 Internal Server Error" Headers({'date': 'Thu, 22 May 2025 13:01:22 GMT', 'content-type': 'application/json', 'content-length': '175', 'connection': 'keep-alive', 'openai-version': '2020-10-01', 'openai-organization': 'winata-ptid7q', 'x-request-id': 'req_9745d5b3bc6ac570834f75d041671acd', 'openai-processing-ms': '102', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c80782fd64b1b-CGK', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 20:01:24,794 - openai._base_client - DEBUG - request_id: req_9745d5b3bc6ac570834f75d041671acd
+2025-05-22 20:01:24,794 - openai._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-05-22 20:01:24,795 - openai._base_client - DEBUG - Retrying due to status code 500
+2025-05-22 20:01:24,795 - openai._base_client - DEBUG - 1 retry left
+2025-05-22 20:01:24,795 - openai._base_client - INFO - Retrying request to /images/generations in 0.830968 seconds
+2025-05-22 20:01:25,626 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/images/generations', 'files': None, 'json_data': {'prompt': 'An image representing supporters watching a football match from a distance that is not close but not far in a stadium', 'model': 'dall-e-3', 'n': 1, 'response_format': 'b64_json', 'size': '1024x1024'}}
+2025-05-22 20:01:25,626 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/images/generations
+2025-05-22 20:01:25,627 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-22 20:01:25,627 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 20:01:25,627 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-22 20:01:25,627 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 20:01:25,627 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-22 20:01:26,075 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'Date', b'Thu, 22 May 2025 13:01:24 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'175'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'openai-organization', b'winata-ptid7q'), (b'x-request-id', b'req_151fff730c7b52bf5b4fce782783ecea'), (b'openai-processing-ms', b'162'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c807fce934b1b-CGK'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 20:01:26,075 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2025-05-22 20:01:26,075 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-22 20:01:26,075 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 20:01:26,075 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 20:01:26,075 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 20:01:26,075 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/images/generations "500 Internal Server Error" Headers({'date': 'Thu, 22 May 2025 13:01:24 GMT', 'content-type': 'application/json', 'content-length': '175', 'connection': 'keep-alive', 'openai-version': '2020-10-01', 'openai-organization': 'winata-ptid7q', 'x-request-id': 'req_151fff730c7b52bf5b4fce782783ecea', 'openai-processing-ms': '162', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c807fce934b1b-CGK', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 20:01:26,075 - openai._base_client - DEBUG - request_id: req_151fff730c7b52bf5b4fce782783ecea
+2025-05-22 20:01:26,076 - openai._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\openai\_base_client.py", line 1002, in _request
+    response.raise_for_status()
+  File "C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://api.openai.com/v1/images/generations'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-05-22 20:01:26,077 - openai._base_client - DEBUG - Re-raising status error
+2025-05-22 20:03:15,875 - openai._base_client - DEBUG - Request options: {'method': 'get', 'url': '/models', 'post_parser': <function SyncAPIClient._request_api_list.<locals>._parser at 0x000002021831EA20>, 'json_data': None}
+2025-05-22 20:03:15,875 - openai._base_client - DEBUG - Sending HTTP Request: GET https://api.openai.com/v1/models
+2025-05-22 20:03:15,876 - httpcore.connection - DEBUG - close.started
+2025-05-22 20:03:15,876 - httpcore.connection - DEBUG - close.complete
+2025-05-22 20:03:15,876 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-22 20:03:16,002 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000202180FB250>
+2025-05-22 20:03:16,002 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002020BEE9A30> server_hostname='api.openai.com' timeout=5.0
+2025-05-22 20:03:16,130 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020218D21B50>
+2025-05-22 20:03:16,131 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-22 20:03:16,131 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-22 20:03:16,131 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-22 20:03:16,132 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-22 20:03:16,132 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-22 20:03:17,165 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 22 May 2025 13:03:15 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'x-request-id', b'90611df3ec23b6e051d500f4316f4b3f'), (b'openai-processing-ms', b'408'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'943c83327ef0e778-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-22 20:03:17,166 - httpx - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2025-05-22 20:03:17,166 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-22 20:03:17,167 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-22 20:03:17,167 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-22 20:03:17,167 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-22 20:03:17,167 - openai._base_client - DEBUG - HTTP Response: GET https://api.openai.com/v1/models "200 OK" Headers({'date': 'Thu, 22 May 2025 13:03:15 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'openai-version': '2020-10-01', 'x-request-id': '90611df3ec23b6e051d500f4316f4b3f', 'openai-processing-ms': '408', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '943c83327ef0e778-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-22 20:03:17,168 - openai._base_client - DEBUG - request_id: 90611df3ec23b6e051d500f4316f4b3f
+2025-05-23 09:15:46,734 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/images/generations', 'files': None, 'json_data': {'prompt': 'An image representing supporters watching a football match from a distance that is not close but not far in a stadium', 'model': 'dall-e-2', 'n': 1, 'response_format': 'b64_json', 'size': '1024x1024'}}
+2025-05-23 09:15:46,735 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/images/generations
+2025-05-23 09:15:46,736 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-23 09:15:46,783 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206DDD47D10>
+2025-05-23 09:15:46,784 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000206DDC39AC0> server_hostname='api.openai.com' timeout=5.0
+2025-05-23 09:15:46,805 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206D7480050>
+2025-05-23 09:15:46,806 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:15:46,807 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:15:46,807 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:15:46,808 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:15:46,808 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:16:01,968 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:16:00 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'openai-organization', b'winata-ptid7q'), (b'x-request-id', b'req_dae8aff00cb1755e64716e37b351e930'), (b'openai-processing-ms', b'14038'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=RBp.HaAThvYTMbMlancYzwArajDoxvtR7fNTlKgjluo-1747966560-1.0.1.1-mPqthU3Cdv7kAXBNA4K8_S9E.PjZ7Klvj_d8jzm5Y8Ww0byJ8fZfFeDZMtZI0pdr2hPkCi58u8T3OV1EnfBJl4_iHSuacGQ6r776MhfxajI; path=/; expires=Fri, 23-May-25 02:46:00 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=bVlzamWyb0jFVv9FvmcNUeuCdqQLNQOUOj8qpUOZtzw-1747966560641-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410c1ddbe43cf7-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:16:01,970 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-05-23 09:16:01,970 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:16:04,851 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:16:04,851 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:16:04,851 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:16:04,854 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/images/generations "200 OK" Headers([('date', 'Fri, 23 May 2025 02:16:00 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('openai-version', '2020-10-01'), ('openai-organization', 'winata-ptid7q'), ('x-request-id', 'req_dae8aff00cb1755e64716e37b351e930'), ('openai-processing-ms', '14038'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=RBp.HaAThvYTMbMlancYzwArajDoxvtR7fNTlKgjluo-1747966560-1.0.1.1-mPqthU3Cdv7kAXBNA4K8_S9E.PjZ7Klvj_d8jzm5Y8Ww0byJ8fZfFeDZMtZI0pdr2hPkCi58u8T3OV1EnfBJl4_iHSuacGQ6r776MhfxajI; path=/; expires=Fri, 23-May-25 02:46:00 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=bVlzamWyb0jFVv9FvmcNUeuCdqQLNQOUOj8qpUOZtzw-1747966560641-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94410c1ddbe43cf7-CGK'), ('content-encoding', 'br'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-05-23 09:16:04,855 - openai._base_client - DEBUG - request_id: req_dae8aff00cb1755e64716e37b351e930
+2025-05-23 09:16:04,926 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-05-23 09:16:04,926 - PIL.PngImagePlugin - DEBUG - STREAM b'eXIf' 41 138
+2025-05-23 09:16:04,927 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 191 65536
+2025-05-23 09:16:05,696 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-05-23 09:16:05,812 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-23 09:16:06,081 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206DDDB8310>
+2025-05-23 09:16:06,096 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000206DDC3A7B0> server_hostname='api.gradio.app' timeout=3
+2025-05-23 09:16:06,442 - asyncio - DEBUG - Using selector: SelectSelector
+2025-05-23 09:16:06,561 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=None socket_options=None
+2025-05-23 09:16:06,562 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206DEF03AD0>
+2025-05-23 09:16:06,562 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-23 09:16:06,563 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:16:06,564 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-23 09:16:06,564 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:16:06,564 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-23 09:16:06,566 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 23 May 2025 02:16:06 GMT'), (b'server', b'uvicorn'), (b'content-length', b'4'), (b'content-type', b'application/json')])
+2025-05-23 09:16:06,567 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-23 09:16:06,567 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-23 09:16:06,568 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:16:06,568 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:16:06,568 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:16:06,569 - httpcore.connection - DEBUG - close.started
+2025-05-23 09:16:06,569 - httpcore.connection - DEBUG - close.complete
+2025-05-23 09:16:06,571 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7860 local_address=None timeout=3 socket_options=None
+2025-05-23 09:16:06,572 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206DEEEA350>
+2025-05-23 09:16:06,573 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-05-23 09:16:06,573 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:16:06,574 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-05-23 09:16:06,574 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:16:06,575 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-05-23 09:16:06,575 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206DEEE9F10>
+2025-05-23 09:16:06,576 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-23 09:16:06,577 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:16:06,577 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-23 09:16:06,577 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:16:06,577 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-23 09:16:06,624 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 23 May 2025 02:16:06 GMT'), (b'server', b'uvicorn'), (b'content-length', b'53837'), (b'content-type', b'text/html; charset=utf-8')])
+2025-05-23 09:16:06,625 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-05-23 09:16:06,626 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-05-23 09:16:06,626 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:16:06,626 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:16:06,627 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:16:06,627 - httpcore.connection - DEBUG - close.started
+2025-05-23 09:16:06,627 - httpcore.connection - DEBUG - close.complete
+2025-05-23 09:16:06,643 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-23 09:16:06,644 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/initiated HTTP/1.1" 200 0
+2025-05-23 09:16:06,773 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:16:05 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-05-23 09:16:06,774 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-23 09:16:06,775 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-23 09:16:06,775 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:16:06,775 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:16:06,775 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:16:06,775 - httpcore.connection - DEBUG - close.started
+2025-05-23 09:16:06,776 - httpcore.connection - DEBUG - close.complete
+2025-05-23 09:16:07,087 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0
+2025-05-23 09:16:21,724 - matplotlib - DEBUG - matplotlib data path: C:\Users\yusup\anaconda3\envs\llms\Lib\site-packages\matplotlib\mpl-data
+2025-05-23 09:16:21,744 - matplotlib - DEBUG - CONFIGDIR=C:\Users\yusup\.matplotlib
+2025-05-23 09:16:21,900 - matplotlib - DEBUG - interactive is False
+2025-05-23 09:16:21,901 - matplotlib - DEBUG - platform is win32
+2025-05-23 09:16:22,016 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'Hi, available categories', 'options': None}], 'model': 'gpt-4o-mini', 'temperature': 0.3, 'tools': [{'type': 'function', 'function': {'name': 'get_ticket_price', 'description': "Get football match ticket prices by category. Just call this when a customer asks for the ticket price, for example 'How much is a category ... ticket?'", 'parameters': {'type': 'object', 'properties': {'category': {'type': 'string', 'description': 'The ticket category the customer wants to purchase'}}, 'required': ['category'], 'additionalProperties': False}}}]}}
+2025-05-23 09:16:22,018 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-23 09:16:22,020 - httpcore.connection - DEBUG - close.started
+2025-05-23 09:16:22,020 - httpcore.connection - DEBUG - close.complete
+2025-05-23 09:16:22,021 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-23 09:16:22,055 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206DDD5A610>
+2025-05-23 09:16:22,055 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000206DDC39AC0> server_hostname='api.openai.com' timeout=5.0
+2025-05-23 09:16:22,082 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206E9A3BAD0>
+2025-05-23 09:16:22,082 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:16:22,083 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:16:22,084 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:16:22,084 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:16:22,084 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:16:23,779 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:16:22 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'938'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'947'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199915'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'25ms'), (b'x-request-id', b'req_0433765464aba919a907c84e0789ad69'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410cfa4b0d4abd-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:16:23,781 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:16:23,781 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:16:23,781 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:16:23,781 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:16:23,783 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:16:23,783 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Fri, 23 May 2025 02:16:22 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '938', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '947', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '199915', 'x-ratelimit-reset-requests': '8.64s', 'x-ratelimit-reset-tokens': '25ms', 'x-request-id': 'req_0433765464aba919a907c84e0789ad69', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94410cfa4b0d4abd-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:16:23,783 - openai._base_client - DEBUG - request_id: req_0433765464aba919a907c84e0789ad69
+2025-05-23 09:16:23,789 - root - DEBUG - Tool calls status: stop
+2025-05-23 09:16:31,281 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'Hi, available categories', 'options': None}, {'role': 'assistant', 'metadata': None, 'content': 'The available ticket categories are category 1, category 2, and category 3.', 'options': None}, {'role': 'user', 'metadata': None, 'content': 'How much for category 2', 'options': None}], 'model': 'gpt-4o-mini', 'temperature': 0.3, 'tools': [{'type': 'function', 'function': {'name': 'get_ticket_price', 'description': "Get football match ticket prices by category. Just call this when a customer asks for the ticket price, for example 'How much is a category ... ticket?'", 'parameters': {'type': 'object', 'properties': {'category': {'type': 'string', 'description': 'The ticket category the customer wants to purchase'}}, 'required': ['category'], 'additionalProperties': False}}}]}}
+2025-05-23 09:16:31,283 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-23 09:16:31,284 - httpcore.connection - DEBUG - close.started
+2025-05-23 09:16:31,285 - httpcore.connection - DEBUG - close.complete
+2025-05-23 09:16:31,285 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-23 09:16:31,294 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206E9BD36D0>
+2025-05-23 09:16:31,294 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000206DDC39AC0> server_hostname='api.openai.com' timeout=5.0
+2025-05-23 09:16:31,314 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206E9BD39D0>
+2025-05-23 09:16:31,314 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:16:31,315 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:16:31,316 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:16:31,316 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:16:31,316 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:16:32,586 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:16:31 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'747'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'756'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199887'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'33ms'), (b'x-request-id', b'req_6c384ebdfe5e928d7a79aebf79044bd7'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410d33fa644ab5-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:16:32,587 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:16:32,587 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:16:32,589 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:16:32,589 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:16:32,589 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:16:32,589 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Fri, 23 May 2025 02:16:31 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '747', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '756', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '199887', 'x-ratelimit-reset-requests': '8.64s', 'x-ratelimit-reset-tokens': '33ms', 'x-request-id': 'req_6c384ebdfe5e928d7a79aebf79044bd7', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94410d33fa644ab5-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:16:32,589 - openai._base_client - DEBUG - request_id: req_6c384ebdfe5e928d7a79aebf79044bd7
+2025-05-23 09:16:32,592 - root - DEBUG - Tool calls status: tool_calls
+2025-05-23 09:16:32,598 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/images/generations', 'files': None, 'json_data': {'prompt': 'An image representing supporters watching a football match from a distance that is not close but not far in a stadium', 'model': 'dall-e-2', 'n': 1, 'response_format': 'b64_json', 'size': '1024x1024'}}
+2025-05-23 09:16:32,600 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/images/generations
+2025-05-23 09:16:32,601 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:16:32,602 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:16:32,602 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:16:32,603 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:16:32,603 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:16:44,976 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:16:43 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'openai-organization', b'winata-ptid7q'), (b'x-request-id', b'req_f7618a91744c89af177224d9aa4ac03f'), (b'openai-processing-ms', b'12022'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410d3c08844ab5-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:16:44,977 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-05-23 09:16:44,977 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:16:47,894 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:16:47,895 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:16:47,895 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:16:47,897 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/images/generations "200 OK" Headers({'date': 'Fri, 23 May 2025 02:16:43 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'openai-version': '2020-10-01', 'openai-organization': 'winata-ptid7q', 'x-request-id': 'req_f7618a91744c89af177224d9aa4ac03f', 'openai-processing-ms': '12022', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94410d3c08844ab5-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:16:47,898 - openai._base_client - DEBUG - request_id: req_f7618a91744c89af177224d9aa4ac03f
+2025-05-23 09:16:47,966 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-05-23 09:16:47,966 - PIL.PngImagePlugin - DEBUG - STREAM b'eXIf' 41 138
+2025-05-23 09:16:47,968 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 191 65536
+2025-05-23 09:16:47,984 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'Hi, available categories', 'options': None}, {'role': 'assistant', 'metadata': None, 'content': 'The available ticket categories are category 1, category 2, and category 3.', 'options': None}, {'role': 'user', 'metadata': None, 'content': 'How much for category 2', 'options': None}, {'content': None, 'refusal': None, 'role': 'assistant', 'annotations': [], 'tool_calls': [{'id': 'call_jqXjKvwk9DKqVT2DjVkqH8Xx', 'function': {'arguments': '{"category":"category 2"}', 'name': 'get_ticket_price'}, 'type': 'function'}]}, {'role': 'tool', 'content': '{"category": "category 2", "ticket_price": "Rp1.000.000"}', 'tool_call_id': 'call_jqXjKvwk9DKqVT2DjVkqH8Xx'}], 'model': 'gpt-4o-mini', 'temperature': 0.3}}
+2025-05-23 09:16:47,986 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-23 09:16:47,987 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:16:47,987 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:16:47,988 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:16:47,988 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:16:47,988 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:16:49,891 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:16:48 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'551'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'567'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199872'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'38ms'), (b'x-request-id', b'req_6444e9d50428299e8354fb466b2c837a'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410d9c4ece4ab5-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:16:49,892 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:16:49,892 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:16:49,893 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:16:49,894 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:16:49,894 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:16:49,894 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Fri, 23 May 2025 02:16:48 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '551', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '567', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '199872', 'x-ratelimit-reset-requests': '8.64s', 'x-ratelimit-reset-tokens': '38ms', 'x-request-id': 'req_6444e9d50428299e8354fb466b2c837a', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94410d9c4ece4ab5-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:16:49,896 - openai._base_client - DEBUG - request_id: req_6444e9d50428299e8354fb466b2c837a
+2025-05-23 09:17:58,294 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'hi how much for category 3', 'options': None}], 'model': 'gpt-4o-mini', 'temperature': 0.3, 'tools': [{'type': 'function', 'function': {'name': 'get_ticket_price', 'description': "Get football match ticket prices by category. Just call this when a customer asks for the ticket price, for example 'How much is a category ... ticket?'", 'parameters': {'type': 'object', 'properties': {'category': {'type': 'string', 'description': 'The ticket category the customer wants to purchase'}}, 'required': ['category'], 'additionalProperties': False}}}]}}
+2025-05-23 09:17:58,295 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-23 09:17:58,297 - httpcore.connection - DEBUG - close.started
+2025-05-23 09:17:58,298 - httpcore.connection - DEBUG - close.complete
+2025-05-23 09:17:58,298 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-23 09:17:58,350 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206E9BE1E10>
+2025-05-23 09:17:58,350 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000206DDC39AC0> server_hostname='api.openai.com' timeout=5.0
+2025-05-23 09:17:58,370 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206E9BE2850>
+2025-05-23 09:17:58,370 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:17:58,371 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:17:58,371 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:17:58,372 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:17:58,372 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:17:59,421 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:17:58 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'574'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'579'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199913'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'25ms'), (b'x-request-id', b'req_bc75dd3b2b3444be21300d97f046c678'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410f541f61a553-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:17:59,422 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:59,422 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:17:59,423 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:17:59,423 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:17:59,423 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:17:59,423 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Fri, 23 May 2025 02:17:58 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '574', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '579', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '199913', 'x-ratelimit-reset-requests': '8.64s', 'x-ratelimit-reset-tokens': '25ms', 'x-request-id': 'req_bc75dd3b2b3444be21300d97f046c678', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94410f541f61a553-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:17:59,423 - openai._base_client - DEBUG - request_id: req_bc75dd3b2b3444be21300d97f046c678
+2025-05-23 09:17:59,425 - root - DEBUG - Tool calls status: tool_calls
+2025-05-23 09:17:59,434 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'hi how much for category 3', 'options': None}, {'content': None, 'refusal': None, 'role': 'assistant', 'annotations': [], 'tool_calls': [{'id': 'call_Y732v5cA8YBXqg2VYaA6aYqZ', 'function': {'arguments': '{"category":"3"}', 'name': 'get_ticket_price'}, 'type': 'function'}]}, {'role': 'tool', 'content': '{"category": "3", "ticket_price": null}', 'tool_call_id': 'call_Y732v5cA8YBXqg2VYaA6aYqZ'}], 'model': 'gpt-4o-mini', 'temperature': 0.3}}
+2025-05-23 09:17:59,436 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-23 09:17:59,436 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:17:59,437 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:17:59,437 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:17:59,440 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:17:59,440 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:18:00,992 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:17:59 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'748'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'752'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9998'), (b'x-ratelimit-remaining-tokens', b'199902'), (b'x-ratelimit-reset-requests', b'15.758s'), (b'x-ratelimit-reset-tokens', b'29ms'), (b'x-request-id', b'req_3240a57cd1f06de3d97c00777368cd8e'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410f5acb52a553-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:18:00,993 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:00,993 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:18:00,994 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:18:00,994 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:18:00,994 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:18:00,995 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Fri, 23 May 2025 02:17:59 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '748', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '752', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9998', 'x-ratelimit-remaining-tokens': '199902', 'x-ratelimit-reset-requests': '15.758s', 'x-ratelimit-reset-tokens': '29ms', 'x-request-id': 'req_3240a57cd1f06de3d97c00777368cd8e', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94410f5acb52a553-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:18:00,995 - openai._base_client - DEBUG - request_id: req_3240a57cd1f06de3d97c00777368cd8e
+2025-05-23 09:18:13,855 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'hi how much for category 3', 'options': None}, {'role': 'assistant', 'metadata': None, 'content': "I'm sorry, but I don't have the price information for category 3 tickets.", 'options': None}, {'role': 'user', 'metadata': None, 'content': 'available categories', 'options': None}], 'model': 'gpt-4o-mini', 'temperature': 0.3, 'tools': [{'type': 'function', 'function': {'name': 'get_ticket_price', 'description': "Get football match ticket prices by category. Just call this when a customer asks for the ticket price, for example 'How much is a category ... ticket?'", 'parameters': {'type': 'object', 'properties': {'category': {'type': 'string', 'description': 'The ticket category the customer wants to purchase'}}, 'required': ['category'], 'additionalProperties': False}}}]}}
+2025-05-23 09:18:13,856 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-23 09:18:13,857 - httpcore.connection - DEBUG - close.started
+2025-05-23 09:18:13,858 - httpcore.connection - DEBUG - close.complete
+2025-05-23 09:18:13,859 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-23 09:18:13,885 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206E9BD2250>
+2025-05-23 09:18:13,885 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000206DDC39AC0> server_hostname='api.openai.com' timeout=5.0
+2025-05-23 09:18:13,926 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206E9BD1AD0>
+2025-05-23 09:18:13,927 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:18:13,928 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:18:13,928 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:18:13,929 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:18:13,929 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:18:16,216 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:18:14 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'931'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'938'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9998'), (b'x-ratelimit-remaining-tokens', b'199888'), (b'x-ratelimit-reset-requests', b'9.384s'), (b'x-ratelimit-reset-tokens', b'33ms'), (b'x-request-id', b'req_7943d70537b571bd4382fcd2a2a3f663'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410fb55e29a620-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:18:16,217 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:16,217 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:18:16,219 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:18:16,219 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:18:16,219 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:18:16,219 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Fri, 23 May 2025 02:18:14 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '931', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '938', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9998', 'x-ratelimit-remaining-tokens': '199888', 'x-ratelimit-reset-requests': '9.384s', 'x-ratelimit-reset-tokens': '33ms', 'x-request-id': 'req_7943d70537b571bd4382fcd2a2a3f663', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94410fb55e29a620-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:18:16,219 - openai._base_client - DEBUG - request_id: req_7943d70537b571bd4382fcd2a2a3f663
+2025-05-23 09:18:16,221 - root - DEBUG - Tool calls status: stop
+2025-05-23 09:18:23,456 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'hi how much for category 3', 'options': None}, {'role': 'assistant', 'metadata': None, 'content': "I'm sorry, but I don't have the price information for category 3 tickets.", 'options': None}, {'role': 'user', 'metadata': None, 'content': 'available categories', 'options': None}, {'role': 'assistant', 'metadata': None, 'content': 'The available ticket categories are category 1, category 2, and category 3.', 'options': None}, {'role': 'user', 'metadata': None, 'content': 'how much for category 3', 'options': None}], 'model': 'gpt-4o-mini', 'temperature': 0.3, 'tools': [{'type': 'function', 'function': {'name': 'get_ticket_price', 'description': "Get football match ticket prices by category. Just call this when a customer asks for the ticket price, for example 'How much is a category ... ticket?'", 'parameters': {'type': 'object', 'properties': {'category': {'type': 'string', 'description': 'The ticket category the customer wants to purchase'}}, 'required': ['category'], 'additionalProperties': False}}}]}}
+2025-05-23 09:18:23,458 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-23 09:18:23,459 - httpcore.connection - DEBUG - close.started
+2025-05-23 09:18:23,460 - httpcore.connection - DEBUG - close.complete
+2025-05-23 09:18:23,460 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-23 09:18:23,512 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206E9BE1610>
+2025-05-23 09:18:23,513 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000206DDC39AC0> server_hostname='api.openai.com' timeout=5.0
+2025-05-23 09:18:23,540 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000206E9C15A10>
+2025-05-23 09:18:23,540 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:18:23,541 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:18:23,541 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:18:23,545 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:18:23,545 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:18:24,510 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:18:23 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'606'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'613'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9998'), (b'x-ratelimit-remaining-tokens', b'199862'), (b'x-ratelimit-reset-requests', b'9.48s'), (b'x-ratelimit-reset-tokens', b'41ms'), (b'x-request-id', b'req_6157ec83a5014ee4ef09b185a177cec2'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410ff17e68959b-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:18:24,511 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:24,512 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:18:24,513 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:18:24,513 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:18:24,513 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:18:24,513 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Fri, 23 May 2025 02:18:23 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '606', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '613', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9998', 'x-ratelimit-remaining-tokens': '199862', 'x-ratelimit-reset-requests': '9.48s', 'x-ratelimit-reset-tokens': '41ms', 'x-request-id': 'req_6157ec83a5014ee4ef09b185a177cec2', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94410ff17e68959b-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:18:24,514 - openai._base_client - DEBUG - request_id: req_6157ec83a5014ee4ef09b185a177cec2
+2025-05-23 09:18:24,515 - root - DEBUG - Tool calls status: tool_calls
+2025-05-23 09:18:24,521 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/images/generations', 'files': None, 'json_data': {'prompt': 'An image representing supporters watching a football match from a great distance in a stadium', 'model': 'dall-e-2', 'n': 1, 'response_format': 'b64_json', 'size': '1024x1024'}}
+2025-05-23 09:18:24,523 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/images/generations
+2025-05-23 09:18:24,524 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:18:24,525 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:18:24,525 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:18:24,525 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:18:24,526 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:18:38,128 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:18:36 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-version', b'2020-10-01'), (b'openai-organization', b'winata-ptid7q'), (b'x-request-id', b'req_76f23698882d8c4def1d8adc8f41ecff'), (b'openai-processing-ms', b'13256'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94410ff79fa1959b-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:18:38,129 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-05-23 09:18:38,129 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:18:41,041 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:18:41,041 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:18:41,041 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:18:41,044 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/images/generations "200 OK" Headers({'date': 'Fri, 23 May 2025 02:18:36 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'openai-version': '2020-10-01', 'openai-organization': 'winata-ptid7q', 'x-request-id': 'req_76f23698882d8c4def1d8adc8f41ecff', 'openai-processing-ms': '13256', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94410ff79fa1959b-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:18:41,044 - openai._base_client - DEBUG - request_id: req_76f23698882d8c4def1d8adc8f41ecff
+2025-05-23 09:18:41,100 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-05-23 09:18:41,100 - PIL.PngImagePlugin - DEBUG - STREAM b'eXIf' 41 138
+2025-05-23 09:18:41,100 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 191 65536
+2025-05-23 09:18:41,106 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "GBK Stadium only provides 3 types of tickets, including category 1, category 2, and category 3.Give short, courteous answers, no more than 1 sentence. Always be accurate. If you don't know the answer, say so.You may use tools only when required. If you can answer the user's question without them, do so."}, {'role': 'user', 'metadata': None, 'content': 'hi how much for category 3', 'options': None}, {'role': 'assistant', 'metadata': None, 'content': "I'm sorry, but I don't have the price information for category 3 tickets.", 'options': None}, {'role': 'user', 'metadata': None, 'content': 'available categories', 'options': None}, {'role': 'assistant', 'metadata': None, 'content': 'The available ticket categories are category 1, category 2, and category 3.', 'options': None}, {'role': 'user', 'metadata': None, 'content': 'how much for category 3', 'options': None}, {'content': None, 'refusal': None, 'role': 'assistant', 'annotations': [], 'tool_calls': [{'id': 'call_pxVPyd9vZxwqRHWDQyPhw4lJ', 'function': {'arguments': '{"category":"category 3"}', 'name': 'get_ticket_price'}, 'type': 'function'}]}, {'role': 'tool', 'content': '{"category": "category 3", "ticket_price": "Rp480.000"}', 'tool_call_id': 'call_pxVPyd9vZxwqRHWDQyPhw4lJ'}], 'model': 'gpt-4o-mini', 'temperature': 0.3}}
+2025-05-23 09:18:41,108 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-05-23 09:18:41,110 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 09:18:41,110 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 09:18:41,111 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 09:18:41,111 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 09:18:41,111 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 09:18:41,917 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 23 May 2025 02:18:40 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'winata-ptid7q'), (b'openai-processing-ms', b'475'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'481'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199847'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'45ms'), (b'x-request-id', b'req_7eec53765ba021d706b8445f0ecb2abe'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9441105f3cf1959b-CGK'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-05-23 09:18:41,918 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:41,920 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 09:18:41,920 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 09:18:41,921 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 09:18:41,921 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 09:18:41,921 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Fri, 23 May 2025 02:18:40 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'winata-ptid7q', 'openai-processing-ms': '475', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '481', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '199847', 'x-ratelimit-reset-requests': '8.64s', 'x-ratelimit-reset-tokens': '45ms', 'x-request-id': 'req_7eec53765ba021d706b8445f0ecb2abe', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '9441105f3cf1959b-CGK', 'content-encoding': 'br', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-05-23 09:18:41,921 - openai._base_client - DEBUG - request_id: req_7eec53765ba021d706b8445f0ecb2abe
